@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 20px 20px 20px 20px;
+    background-color: lightcyan;
+}
+
+header {
+    padding: 20px;
+    background-color: teal;
+    color: #420080;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: teal;
+}
+
+nav {
+    margin-right: 20px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color: #420080;
+}
+
+h1,
+h2,
+h3 {
+    color: #420080;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #420080;
+}
+
+.selfPortrait {
+        max-width: 150px;
+        max-height: 200px;
+        border: 5px solid #420080;
+        float: left;
+        margin-right: 20px;
+}
+
+.myInfo {
+    min-height: 250px;
+    max-height: fit-content;
+    margin-bottom: 20px;
+}
+
+.myInfo p {
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid #420080;
+    transition: all 0.5s ease-in-out;
+}
+
+.projects:hover {
+    transform: scale(1.1);
+}
+
+.projects img {
+    max-width: 295px;
+    max-height: 250px;
+    padding: 5px;
+} 
+
+@media screen and (max-width: 768px) {
+    .projects {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects img {
+        width: 85%;
+    }
+}
