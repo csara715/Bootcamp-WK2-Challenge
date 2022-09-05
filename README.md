@@ -35,4 +35,4 @@ THEN They are presented with a responsive layout that adapts to their viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./assets/images/ScreenShot.png)
