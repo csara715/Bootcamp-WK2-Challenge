@@ -70,6 +70,11 @@ a {
     margin-bottom: 20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+
 .projects {
     display: inline-block;
     align-items: center;
@@ -86,32 +91,103 @@ a {
 
 /* Prevents the images from taking over the entire page */
 .projects img {
-    max-width: 295px;
-    max-height: 250px;
+    max-width: 700px;
+    max-height: 350px;
+    padding: 5px;
+} 
+
+.project1 {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid #420080;
+    transition: all 0.5s ease-in-out;
+}
+
+/* The image enlarges when user hovers on the image */
+.project1:hover {
+    transform: scale(1.1);
+}
+
+/* Prevents the images from taking over the entire page */
+.project1 img {
+    max-width: 850px;
+    max-height: 350px;
     padding: 5px;
 } 
 
 /* Project links and images are responsive to changes in screen size */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .projects {
-        width: 100%;
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .projects img {
-        width: 100%;
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) {
+    .project1 {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project1 img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .projects {
-        width: 50%;
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     .projects img {
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .project1 {
         width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .project1 img{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects img {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .project1 {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project1 img {
+        width: 95%;
     }
 }
